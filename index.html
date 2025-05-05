@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principio del Palomar</title>
+    <link rel="stylesheet" href="estilos.css">
+ 
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Principio del Palomar</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn">Menú</button>
+            <div class="dropdown-content">
+                <a href="#enunciado">Enunciado</a>
+                <a href="#demostracion1">Demostración 1</a>
+                <a href="#demostracion2">Demostración 2</a>
+                </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="column">
+            <h2 id="enunciado">Enunciado del Problema:</h2>
+            <p>Si se distribuyen n objetos en m cajas y sabemos que \(n > mr\), entonces por lo menos en una de las cajas habrá como mínimo \(r + 1\) objetos. [cite: 1]</p>
+
+            <h3 id="demostracion1">Demostración (utilizando el Principio del Palomar por contradicción):</h3>
+            <p>Supongamos, para llegar a una contradicción, que en ninguna de las m cajas hay al menos \(r + 1\) objetos. [cite: 2] Esto implica que el número de objetos en cada caja es a lo sumo r. [cite: 3] Sea \(c_{i}\) el número de objetos en la caja \(i,\) donde i varía desde 1 hasta m. [cite: 4] Nuestra suposición es que: </p>
+            <p class="formula">\(c_{i}\le r\) para todo \(i=1,2,...,m\)  [cite: 5]</p>
+            <p>El número total de objetos distribuidos en las m cajas es la suma del número de objetos en cada caja:</p>
+            <p class="formula">\(n=\sum_{i=1}^{m}c_{i}\)  [cite: 5]</p>
+            <p>Dado que \(c_{i}\le r\) para cada caja, la suma total del número de objetos está acotada superiormente por:</p>
+            <p class="formula">\(n=\sum_{i=1}^{m}c_{i}\le\sum_{i=1}^{m}r=mr\)  [cite: 5]</p>
+            <p>Por lo tanto, si nuestra suposición fuera cierta, tendríamos que \(n\le mr\). [cite: 5]</p>
+            <p>Sin embargo, el enunciado del problema nos da la condición de que \(n>mr.\)  [cite: 6] Esta condición contradice nuestra conclusión de que \(n\le mr\). [cite: 6]</p>
+            <p>Por lo tanto, la suposición inicial de que en ninguna de las cajas hay al menos \(r+1\) objetos debe ser falsa. [cite: 7]</p>
+            <p>En consecuencia, concluimos que por lo menos en una de las cajas habrá como mínimo \(r+1\) objetos. [cite: 8]</p>
+            <p>Este resultado es una aplicación directa del Principio del Palomar (o Principio de Dirichlet). [cite: 9]</p>
+        </div>
+        <div class="column">
+            <h2 id="ejercicio2">1 ejercicio 2</h2>
+            <p>1.  Si se distribuyen n objetos en m cajas y sabemos que \(n>mr\), entonces por lo menos en una de las cajas habrá como mínimo \(r+1\) objetos. [cite: 10]</p>
+
+            <h3 id="demostracion2">Demostración (por contradicción):</h3>
+            <p>Supongamos que la conclusión es falsa, es decir, que en ninguna de las m cajas hay al menos \(r+1\) objetos. [cite: 11] Esto implica que el número de objetos en cada caja es a lo sumo r. [cite: 12] Sea \(x_{i}\) el número de objetos en la caja i, donde \(i=1,2,...,m\). Nuestra suposición es que \(x_{i}\le r\) para todo i. [cite: 13]</p>
+            <p>El número total de objetos distribuidos es la suma de los objetos en cada caja:</p>
+            <p class="formula">\(n=\sum_{i=1}^{m}x_{i}\)  [cite: 14]</p>
+            <p>Si cada \(x_{i}\le r,\) entonces la suma total está acotada por:</p>
+            <p class="formula">\(n=\sum_{i=1}^{m}x_{i}\le\sum_{i=1}^{m}r=mr\)  [cite: 14]</p>
+            <p>Esto nos lleva a la conclusión de que \(n\le mr,\) lo cual contradice la condición inicial dada en el problema, n > mr. [cite: 14]</p>
+            <p>Por lo tanto, nuestra suposición inicial de que en ninguna caja hay al menos \(r+1\) objetos debe ser falsa. [cite: 15]</p>
+            <p>En consecuencia, por lo menos en una de las cajas habrá como mínimor \(r+1\) objetos. [cite: 16]</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
